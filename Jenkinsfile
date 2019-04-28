@@ -1,8 +1,6 @@
 pipeline{
     agent any
-    ws('/opt/codebase') {
-        // some block
-    }
+    ws('/opt/codebase') 
     stages{
         stage("SCM Checkout"){
             steps{

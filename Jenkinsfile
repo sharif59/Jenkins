@@ -1,8 +1,6 @@
 pipeline{
     agent any
-    ws('/opt/codebase') {
-
-    
+    customWorkspace  '/opt/codebase'
     stages{
         stage("SCM Checkout"){
             steps{
@@ -86,7 +84,7 @@ pipeline{
             }
         }
     }
-    }
+    
     post{
         always{
             echo "========always ========"

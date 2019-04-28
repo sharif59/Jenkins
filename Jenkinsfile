@@ -1,6 +1,8 @@
 pipeline{
-    agent any
-    customWorkspace  '/opt/codebase'
+    agent {
+        customWorkspace  '/opt/codebase'
+    }
+    
     stages{
         stage("SCM Checkout"){
             steps{

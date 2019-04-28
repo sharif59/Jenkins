@@ -1,5 +1,6 @@
 pipeline{
     agent {
+        any
         customWorkspace  '/opt/codebase'
     }
     
